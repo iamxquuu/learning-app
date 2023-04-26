@@ -16,6 +16,8 @@
 		0E70D52729F8230700211114 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E70D52529F8230700211114 /* data.json */; };
 		0E70D52929F8250E00211114 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70D52829F8250E00211114 /* Models.swift */; };
 		0E70D52B29F832E400211114 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70D52A29F832E400211114 /* HomeViewRow.swift */; };
+		0E84504229F9276B00BED36E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E84504129F9276B00BED36E /* ContentView.swift */; };
+		0E84504429F92D4C00BED36E /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E84504329F92D4C00BED36E /* ContentViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		0E70D52529F8230700211114 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		0E70D52829F8250E00211114 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		0E70D52A29F832E400211114 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		0E84504129F9276B00BED36E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0E84504329F92D4C00BED36E /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			children = (
 				0E35DA7029F5CD8500B036B0 /* HomeView.swift */,
 				0E70D52A29F832E400211114 /* HomeViewRow.swift */,
+				0E84504129F9276B00BED36E /* ContentView.swift */,
+				0E84504329F92D4C00BED36E /* ContentViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 			files = (
 				0E35DA7129F5CD8500B036B0 /* HomeView.swift in Sources */,
 				0E70D52B29F832E400211114 /* HomeViewRow.swift in Sources */,
+				0E84504229F9276B00BED36E /* ContentView.swift in Sources */,
 				0E35DA6F29F5CD8500B036B0 /* learning_app.swift in Sources */,
+				0E84504429F92D4C00BED36E /* ContentViewRow.swift in Sources */,
 				0E70D52329F81FFF00211114 /* ContentModel.swift in Sources */,
 				0E70D52929F8250E00211114 /* Models.swift in Sources */,
 			);
