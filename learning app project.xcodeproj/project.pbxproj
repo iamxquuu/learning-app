@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E34AB9429FAC50100BFAE86 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E34AB9329FAC50100BFAE86 /* RectangleView.swift */; };
 		0E35DA6F29F5CD8500B036B0 /* learning_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E35DA6E29F5CD8500B036B0 /* learning_app.swift */; };
 		0E35DA7129F5CD8500B036B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E35DA7029F5CD8500B036B0 /* HomeView.swift */; };
 		0E35DA7329F5CD8600B036B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E35DA7229F5CD8600B036B0 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E34AB9329FAC50100BFAE86 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		0E35DA6B29F5CD8500B036B0 /* learning app project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning app project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E35DA6E29F5CD8500B036B0 /* learning_app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learning_app.swift; sourceTree = "<group>"; };
 		0E35DA7029F5CD8500B036B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				0E84504329F92D4C00BED36E /* ContentViewRow.swift */,
 				0E84504529F9759700BED36E /* ContentDetailView.swift */,
 				0E7465A429FAB2D300A8A2A8 /* CodeTextView.swift */,
+				0E34AB9329FAC50100BFAE86 /* RectangleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				0E70D52B29F832E400211114 /* HomeViewRow.swift in Sources */,
 				0E84504229F9276B00BED36E /* ContentView.swift in Sources */,
 				0E84504629F9759700BED36E /* ContentDetailView.swift in Sources */,
+				0E34AB9429FAC50100BFAE86 /* RectangleView.swift in Sources */,
 				0E35DA6F29F5CD8500B036B0 /* learning_app.swift in Sources */,
 				0E84504429F92D4C00BED36E /* ContentViewRow.swift in Sources */,
 				0E7465A529FAB2D300A8A2A8 /* CodeTextView.swift in Sources */,
