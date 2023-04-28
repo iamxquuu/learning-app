@@ -79,11 +79,21 @@ struct TestView: View {
                 }
                 
                 Button {
-                    
-                    submitted = true
-                    
-                    if selectedAnswerIndex == model.currentQuestion!.correctIndex {
-                        numCorrect += 1
+                    //Check if answer has been submitted
+                    if submitted == true {
+                        model.nextQuestion()
+                        
+                        //reset properties
+                        submitted = false
+                        selectedAnswerIndex = nil
+                    }
+                    else{
+                        
+                        submitted = true
+                        
+                        if selectedAnswerIndex == model.currentQuestion!.correctIndex {
+                            numCorrect += 1
+                        }
                     }
                     
                 } label: {
@@ -92,7 +102,7 @@ struct TestView: View {
                         
                         RectangleView(color: .green)
                             .frame(height: 48)
-                        Text("Submit")
+                        Text(buttonText)
                             
                             .foregroundColor(.white)
                             .bold()
@@ -111,6 +121,22 @@ struct TestView: View {
             ProgressView()
         }
         
+    }
+    
+    var buttonText:String {
+        
+        //check if answer has been submitted
+        if submitted == true {
+            
+            if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+                return "Finish"
+            }else {
+                return "Next"
+            }
+        }
+        else{
+            return "Submit"
+        }
     }
 }
 
