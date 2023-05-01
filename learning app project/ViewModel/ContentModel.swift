@@ -31,11 +31,11 @@ class ContentModel: ObservableObject {
     init() {
         
         getLocalData()
-        
+        getRemoteData()
     }
     
     // MARK: - Data methods
-    
+    //parse local included json data
     func getLocalData() {
         
         // Get a url to the json file
@@ -71,6 +71,46 @@ class ContentModel: ObservableObject {
             // Log error
             print("Couldn't parse style data")
         }
+        
+    }
+    //download remote json file and parse data
+    func getRemoteData() {
+        //string path
+        let urlString = "https://iamxquuu.github.io/learning-app-data/data2.json"
+        
+        let url = URL(string: urlString)
+        
+        guard url != nil else {
+            return
+        }
+        
+        let request = URLRequest(url: url!)
+        
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: request) { data, response, error in
+            
+            guard error == nil else {
+                //There was an error
+                return
+            }
+            do{
+                
+                let decoder = JSONDecoder()
+                
+                let modules = try decoder.decode([Module].self, from: data!)
+                
+                self.modules += modules
+                
+            }
+            catch {
+                
+            }
+            
+            
+        }
+        //kick off data task
+        dataTask.resume()
         
     }
     
